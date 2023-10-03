@@ -39,14 +39,17 @@ $ echo "hello world" > index.txt
 #### step 1: On your terminal, open a folder called shell-scripting using the command mkdir shell-scripting. This will hold all the script we will write in this lesson.
 #### step 2: create a file called user-input.sh using the command touch user-input.sh
 #### step 3: Inside the file copy and paste the block of code below:
-$ #!/bin/bash
+#!/bin/bash
 
-$ # Prompt the user for their name
-$ echo "Enter your name:"
-$ read name
+# Prompt the user for their name
 
-$ # Display a greeting with the entered name
-$ echo "Hello, $name! Nice to meet you."
+echo "Enter your name:"
+
+read name
+
+# Display a greeting with the entered name
+
+echo "Hello, $name! Nice to meet you."
 
 #### A liitle bit about the code block. The script prompts for your name. When you type your name, it displays the text hello ! Nice to meet you. Also #!/bin/bash helps you specify the type of bash interpreter to be used to execute the script.
 #### step 4: save your file
@@ -60,10 +63,13 @@ $ echo "Hello, $name! Nice to meet you."
 
 #### Directory Manipulation and Navigation
 ##### Proceed by following the steps bellow:
-$ step 1: open a file named navigating-linux-filesystem.sh
-$ step 2: paste the code block below into your file.
-$ step 3: Run the command sudo chmod +x navigating-linux-filesystem.sh to set execute permission on the file
-$ step 4: Run your script using this command ./navigating-linux-filesystem.sh
+step 1: open a file named navigating-linux-filesystem.sh
+
+step 2: paste the code block below into your file.
+
+step 3: Run the command sudo chmod +x navigating-linux-filesystem.sh to set execute permission on the file
+
+step 4: Run your script using this command ./navigating-linux-filesystem.sh
 ![Screenshot from 2023-10-03 00-24-27](https://github.com/PromiseNwachukwu/Shell-Scripting-Hands-on-Project/assets/109115304/fb67d259-0605-423b-8e96-0fc04052cbea)
 
 ## File Operations and Sorting
@@ -72,15 +78,25 @@ $ step 4: Run your script using this command ./navigating-linux-filesystem.sh
 ![Screenshot from 2023-10-03 00-37-18](https://github.com/PromiseNwachukwu/Shell-Scripting-Hands-on-Project/assets/109115304/323d5687-0f47-4df7-9c58-2b61c5d372a5)
 
 #### Excercise on File Operations and Sorting
-$ step 1: Open your terminal and create a file called sorting.sh using the command touch sorting.sh
-$ step 2: Copy and paste the code block below into the file
-$ step 3: Set execute permission on sorting.sh using this command sudo chmod +x sorting.sh
-$ step 4: Run your script using the command ./sorting.sh
+#### step 1: Open your terminal and create a file called sorting.sh using the command touch sorting.sh
+#### step 2: Copy and paste the code block below into the file
+#### step 3: Set execute permission on sorting.sh using this command sudo chmod +x sorting.sh
+#### step 4: Run your script using the command ./sorting.sh
 ![Screenshot from 2023-10-03 00-43-20](https://github.com/PromiseNwachukwu/Shell-Scripting-Hands-on-Project/assets/109115304/9fda6e13-c311-41f7-b8dc-f06a855af965)
 
 ## Working with Numbers and Calculations
-$ step 1: On your terminal create a file called calculations.sh using the command touch calculations.sh
-$ step 2: Copy and paste the code block below:
-$ Step 3: Set execute permission on calculations.sh using the command: sudo chmod +x calculations.sh
-$ step 4: Run your script using this command: ./calculations.sh
+#### step 1: On your terminal create a file called calculations.sh using the command touch calculations.sh
+#### step 2: Copy and paste the code block below:
+#### Step 3: Set execute permission on calculations.sh using the command: sudo chmod +x calculations.sh
+#### step 4: Run your script using this command: ./calculations.sh
 ![Screenshot from 2023-10-03 00-53-37](https://github.com/PromiseNwachukwu/Shell-Scripting-Hands-on-Project/assets/109115304/5599d7f2-c139-4d82-a699-e47889a033cb)
+
+## File Backup and Timestamping
+### This script defines the source directory and backup directory paths. It then creates a timestamp using the current date and time, and creates a backup directory with the timestamp appended to its name. The script then copies all files from the source directory to the backup directory using the cp command with the -r option for recursive copying. Finally, it displays a message indicating the completion of the backup process and shows the path of the backup directory with the timestamp.
+#### step 1: On your terminal open a file backup.sh using the command touch backup.sh
+#### step 2: Copy and paste the code block below into the file.
+#### step 3: Set execute permission on backup.sh using this command sudo chmod +x backup.sh
+#### step 4: Run your script using the command: ./backup.sh
+![Screenshot from 2023-10-03 12-47-43](https://github.com/PromiseNwachukwu/Shell-Scripting-Hands-on-Project/assets/109115304/71b5ab2b-4628-4008-8e2a-bf1ab17c7d9f)
+
+#### The project is now completed.
